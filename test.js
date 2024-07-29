@@ -18,3 +18,7 @@ test('only when needed', function (t) {
 
   t.is(unslab(buf), buf)
 })
+
+test('accepts null', function (t) {
+  t.is(unslab(null), null)
+})
